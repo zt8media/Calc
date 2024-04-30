@@ -1,5 +1,85 @@
+body{
+    background-color: rgb(237, 9, 177) ;
+}
 .container{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-   
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    background-color: rgba(213, 9, 148, 0.373);
+  height: 100vh;
+  padding: 15px;
+  border-radius: 5px;
+
 }
+#equal{
+    grid-column:2/5 ;
+    background-color: rgb(255, 0, 162);
+}
+
+.btn{
+    height: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: solid 3px black;
+    font-size: 30px;
+    background-color: rgb(237, 215, 218);
+}
+
+.btn:hover{
+    background-color: pink;
+}
+.btn:active{
+    background-color: white;
+ }.input{
+    border: solid rgb(237, 9, 177) 3px;
+    border-inline-start: ;
+    font-size: 85px;
+    height: 100px;
+    width: auto;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.373);
+
+}
+
+#operator,#clear,#negative,#period{
+background-color: rgb(171, 39, 136) ;
+color:white;
+}
+
+#operator:hover{
+    background-color: pink;
+}
+#clear:hover{
+    background-color: pink;
+}
+#negative:hover{
+    background-color: pink;
+}
+#period:hover{
+    background-color: pink;
+}
+#equal:hover{
+    background-color: pink;
+}
+
+#operator:active{
+   background-color: rgb(0, 0, 0);
+}
+#clear:active{
+    background-color: rgb(0, 0, 0);
+ }
+ #negative:active{
+    background-color: rgb(0, 0, 0);
+ }
+
+ #period:active{
+    background-color: black;
+ }
+ #equal:active{
+    background-color: white;
+ }
+ 
+ 
