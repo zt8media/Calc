@@ -12,7 +12,8 @@ body {
 }
 #heading{
     color:white;
-    font-size: 65px;
+    font-size: 50px;
+  
 
  
 
@@ -24,7 +25,8 @@ body {
     background-color: rgba(213, 9, 148, 0.373);
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added shadow for better visibility */
+    box-shadow: 1px 3px 35px rgb(255, 254, 254); 
+    
 }
 #shortcuts{
     color: red;
@@ -32,18 +34,19 @@ body {
 .input {
     grid-column: 1 / -1; /* Makes the input display take full width of grid */
     /* border: 3px solid rgb(237, 9, 177); */
-    font-size: 4rem; /* Adjust font size based on the screen */
-    height: 60px; /* Adjusted for better fit */
+    font-size: 4rem; 
+    height: 60px;
     width: 89%;
     color: rgb(255, 250, 250);
     text-align: right;
     /* background-color: rgba(255, 255, 255, 0.5); */
     padding: 10px;
     margin-bottom: 10px; /* Space between input and buttons */
+    /* box-shadow: 1px 3px 35px rgb(255, 254, 254);  */
 }
 
 .btn {
-    height: 60px; /* Smaller buttons for better fit */
+    height: 60px; 
     border-radius: 5px;
     border: solid 3px black;
     font-size: 1.5rem;
@@ -84,9 +87,9 @@ border-radius: 5px;
 
 .theme-selector {
     position: absolute;
-    right: 20px; /* Adjust this value as needed */
-    top: 20px; /* Adjust this value as needed */
-    width: 150px; /* Adjust the width as needed */
+    right: 20px; 
+    top: 20px; 
+    width: 150px; 
 }
 
 .theme-selector h3 {
