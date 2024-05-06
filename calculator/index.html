@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
+
+
 <body>
- 
+    <audio id="clapSound" src="clap.mp3"></audio>
+    <h1 id="heading">Calculator</h1>
  <main>
+   
 <div class="input">0</div>
 <div class="container">
-<button id="extra" class="btn">MR</button>
-<button id="extra" class="btn">MC</button>
-<button id="extra" class="btn">M-</button>
-<button id="extra" class="btn">M+</button>
 <button id="clear" class="btn">C</button>
-<button id="negative" class="btn">+/-</button>
-<button id="operator" class="btn">/</button>
-<button id="operator" class="btn">*</button>
+<button id="negative" class="btn">👏🏾</button>
+<button id="operator" class="btn">&#247;</button>
+<button id="operator" class="btn">&#215;</button>
 <button class="btn">7</button>
 <button class="btn">8</button>
 <button class="btn">9</button>
@@ -40,12 +40,24 @@
 
 
 
+    <div class="theme-selector">
+        <h3 id="style-text">Choose Your Style:</h3>
+        <select id="color-toggle">
+            <option value="default">Pink</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+   <h3 id="shortcuts">Keyboard shortcuts</h3>
+   <h3 >Shift + "="key = add</h3>
+   <h3>Return/Enter = Equal</h3>
+
+    </div>
 
 
 
 
 </main>
 
-    <script>src="script.js"</script>
+    <script src="script.js"></script>
 </body>
 </html>

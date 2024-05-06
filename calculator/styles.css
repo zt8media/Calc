@@ -1,85 +1,171 @@
-body{
-    background-color: rgb(237, 9, 177) ;
-}
-.container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+
+   
+}
+#heading{
+    color:white;
+    font-size: 65px;
+
+ 
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     background-color: rgba(213, 9, 148, 0.373);
-  height: 100vh;
-  padding: 15px;
-  border-radius: 5px;
-
-}
-#equal{
-    grid-column:2/5 ;
-    background-color: rgb(255, 0, 162);
-}
-
-.btn{
-    height: 100px;
+    padding: 15px;
     border-radius: 5px;
-    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Added shadow for better visibility */
+}
+#shortcuts{
+    color: red;
+}
+.input {
+    grid-column: 1 / -1; /* Makes the input display take full width of grid */
+    /* border: 3px solid rgb(237, 9, 177); */
+    font-size: 4rem; /* Adjust font size based on the screen */
+    height: 60px; /* Adjusted for better fit */
+    width: 89%;
+    color: rgb(255, 250, 250);
+    text-align: right;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between input and buttons */
+}
+
+.btn {
+    height: 60px; /* Smaller buttons for better fit */
+    border-radius: 5px;
     border: solid 3px black;
-    font-size: 30px;
+    font-size: 1.5rem;
     background-color: rgb(237, 215, 218);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: pink;
 }
-.btn:active{
+
+.btn:active {
     background-color: white;
- }.input{
-    border: solid rgb(237, 9, 177) 3px;
-    border-inline-start: ;
-    font-size: 85px;
+}
+
+#equal {
+    grid-column: 2 / 5;
+    background-color: rgb(255, 0, 162);
+}
+
+#style-text{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#color-toggle{
+background-color: transparent;
+color: white;
+font-size: 150%;
+height: 50px;
+
+border-radius: 5px;
+}
+
+
+
+
+
+
+
+.theme-selector {
+    position: absolute;
+    right: 20px; /* Adjust this value as needed */
+    top: 20px; /* Adjust this value as needed */
+    width: 150px; /* Adjust the width as needed */
+}
+
+.theme-selector h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+.theme-selector select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.green-theme {
+    background-color: rgba(0, 128, 0, 0.7); /* Light green background for the container */
+}
+
+.green-theme .btn {
+    background-color: rgb(144, 238, 144); /* Light green buttons */
+}
+
+.green-theme .btn:hover {
+    background-color: rgb(0, 100, 0); /* Dark green on hover */
+}
+
+.green-theme #equal {
+    background-color: rgb(34, 139, 34); /* Specific green for the equal button */
+}
+
+.yellow-theme {
+    background-color: rgba(255, 255, 0, 0.6); /* Light yellow background for the container */
+}
+
+.yellow-theme .btn {
+    background-color: rgb(255, 255, 224); /* Lighter yellow buttons */
+}
+
+.yellow-theme .btn:hover {
+    background-color: rgb(204, 204, 0); /* Darker yellow on hover */
+}
+
+.yellow-theme #equal {
+    background-color: rgb(218, 165, 32); /* Specific gold for the equal button */
+}
+
+
+
+/* PRACTICE PROBLEMS */
+
+#practice-box{
+color:pink;
+font-size: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+
+
+}
+
+.prac-btn{
     height: 100px;
-    width: auto;
-    color: rgb(0, 0, 0);
-    text-align: right;
-    background-color: rgba(255, 255, 255, 0.373);
-
+    width: 350px;
+    font-size: 60px;
+    font-family:sans-serif;
 }
 
-#operator,#clear,#negative,#period{
-background-color: rgb(171, 39, 136) ;
-color:white;
+#emoji{
+    font-size: 140px;
+    display: flex;
+    justify-content: center;
 }
 
-#operator:hover{
-    background-color: pink;
-}
-#clear:hover{
-    background-color: pink;
-}
-#negative:hover{
-    background-color: pink;
-}
-#period:hover{
-    background-color: pink;
-}
-#equal:hover{
-    background-color: pink;
+.prac-btn:hover{
+    background-color: blueviolet;
 }
 
-#operator:active{
-   background-color: rgb(0, 0, 0);
+.prac-btn:active{
+    background-color: rgb(170, 95, 241);
 }
-#clear:active{
-    background-color: rgb(0, 0, 0);
- }
- #negative:active{
-    background-color: rgb(0, 0, 0);
- }
-
- #period:active{
-    background-color: black;
- }
- #equal:active{
-    background-color: white;
- }
- 
- 
